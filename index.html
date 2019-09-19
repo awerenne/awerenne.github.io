@@ -67,6 +67,24 @@
 		    border: none;
 		}
 
+		.video-container {
+			position: relative;
+			padding-bottom: 56.25%;
+			padding-top: 30px;
+			height: 0;
+			overflow: hidden;
+		}
+
+		/*.video-container iframe,
+		.video-container object,
+		.video-container embed {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}*/
+
 		.link-project:hover {
 			color: blue;
 			cursor: pointer;
@@ -150,7 +168,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 								<div class="col-md-6">
 									<image style="max-width: 100%;" src="images/img-thesis.png" />
 								</div>
-								Typically, a multi-modal neural network exploits information from different channels and in different terms (e.g. images, text, sounds, sensor measures) in the hope that the information carried by each mode is complementary, in order to improve the predictions of the neural network. Nevertheless, in realistic situations, varying levels of perturbations can occur on the data of the modes, which may decrease the quality of the inference process. An additional difficulty is that these perturbations vary between the modes and on a sample-per-sample basis. The proposed solution in this thesis is to enable the neural network focus on the best combination of modes, i.e. the modes containing the least amount of perturbations while having the highest informativeness for the predictive task at hand. Promising results were obtained, as an example, the figure on the left shows the performance evolving when increasing the amount of perturbations on one of the input modes. It can be seen that the performance of the neural network enhanced with our method (blue line) remains stable, whereas the performance using standard data augmentation (most common solution against perturbations, red line) decreases drastically. More information can be found in the report (link below).
+								Typically, a multi-modal neural network exploits information from different channels and in different terms (e.g. images, text, sounds, sensor measures) in the hope that the information carried by each mode is complementary, in order to improve the predictions of the neural network. Nevertheless, in realistic situations, varying levels of perturbations can occur on the data of the modes, which may decrease the quality of the inference process. An additional difficulty is that these perturbations vary between the modes and on a sample-per-sample basis. The proposed solution in this thesis is to enable the neural network focus on the best combination of modes, i.e. the modes containing the least amount of perturbations while having the highest informativeness for the predictive task at hand. Promising results were obtained, as an example, the plot shows the performance evolving when increasing the amount of perturbations on one of the input modes. It can be seen that the performance of the neural network enhanced with our method (blue line) remains stable, whereas the performance using standard data augmentation (most common solution against perturbations, red line) decreases drastically. More information can be found in the report (link below).
 							</div>
 						</div>
 						<div class="row" style="margin-top: 10px">
@@ -193,8 +211,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-md-12">
-								<iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY" class="center-video"></iframe>
+							<div class="col-md-12 video-container">
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY" class="center-video" allowfullscreen></iframe>
 							</div>
 						</div>
 						
